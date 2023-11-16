@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AccountManager" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/color_primary</item>
+         <item name="colorSecondary">@color/color_secondary</item>
+         <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <style name="Theme.AccountManager" parent="Base.Theme.AccountManager" />
+
+    <color name="color_primary">#31BEE8</color>
+    <color name="color_secondary">#CA360A</color>
+    <color name="color_accent">#E16F7B</color>
+</resources>

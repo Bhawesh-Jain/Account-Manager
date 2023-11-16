@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/_15sdp"
+    android:paddingVertical="@dimen/_5sdp"
+    android:orientation="vertical"
+    tools:context=".ui.SetPinActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/prompt_bold"
+            android:text="Set Pin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_100sdp"
+        android:maxHeight="@dimen/_200sdp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:elevation="@dimen/_10sdp"
+        android:src="@drawable/ic_otp_verification" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/prompt_regular"
+        android:gravity="center"
+        android:text="Enter a 4 Digit Pin"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="@dimen/_16sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.abmtech.myapplication.utils.CustomEditText
+            android:id="@+id/edt_one"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@drawable/custom_bg_edt_pin"
+            android:gravity="center"
+            android:imeOptions="actionNone"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <com.abmtech.myapplication.utils.CustomEditText
+            android:id="@+id/edt_two"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/custom_bg_edt_pin"
+            android:gravity="center"
+            android:imeOptions="actionNone"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <com.abmtech.myapplication.utils.CustomEditText
+            android:id="@+id/edt_three"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:background="@drawable/custom_bg_edt_pin"
+            android:gravity="center"
+            android:imeOptions="actionNone"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <com.abmtech.myapplication.utils.CustomEditText
+            android:id="@+id/edt_four"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@drawable/custom_bg_edt_pin"
+            android:gravity="center"
+            android:imeOptions="actionNone"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_margin="@dimen/_40sdp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/text_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/prompt_regular"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
